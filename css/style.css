@@ -146,10 +146,10 @@ header .navbar a:hover{
 }
 
 .home .content img{
-    height: 20rem;
-    width:20rem;
-    border-radius: 50px;
-    object-fit: cover;
+    height: 19rem;
+    width:19rem;
+    border-radius: 30px;
+    object-fit: contain;
     border:1rem solid var(--green);
 }
 
