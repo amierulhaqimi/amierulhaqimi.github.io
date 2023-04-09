@@ -364,19 +364,33 @@
 
     <div class="row">
 
+      <?php
+          $Msg = "";
+          if(isset($_GET['error']))
+          {
+              $Msg = " Please Fill in the Blanks ";
+              echo '<div class="alert alert-danger">'.$Msg.'</div>';
+          }
 
+          if(isset($_GET['success']))
+          {
+              $Msg = " Your Message Has Been Sent ";
+              echo '<div class="alert alert-success">'.$Msg.'</div>';
+          }
+
+      ?>
         <form action="">
 
             <div class="inputBox">
-                <input type="text" placeholder="name">
-                <input type="email" placeholder="email">
+                <input type="text" name="UName" placeholder="name">
+                <input type="email"  name="Email" placeholder="email">
             </div>
 
-            <input type="text" placeholder="subject" class="box">
+            <input type="text" name="Subject" placeholder="subject" class="box">
 
-            <textarea placeholder="Tak belajar server lagi huhu" name="" id="" cols="30" rows="10"></textarea>
+            <textarea placeholder="Tak belajar server lagi huhu" name="msg" id="" cols="30" rows="10"></textarea>
 
-            <input type="submit" class="btn" value="send message">
+            <input type="submit" class="btn" value="send message" name="btn-send">
 
         </form>
 
@@ -441,6 +455,10 @@ var typed = new Typed('.typing-text', {
 VanillaTilt.init(document.querySelectorAll('.tilt'),{
     max:25
 });
+
+
+
+  alert("Hello, Selamat Datang");
 
 
 </script>
