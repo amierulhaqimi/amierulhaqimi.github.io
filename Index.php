@@ -379,7 +379,7 @@
           }
 
       ?>
-        <form action="">
+        <form action="process.php" method="post">
 
             <div class="inputBox">
                 <input type="text" name="UName" placeholder="name">
@@ -390,7 +390,7 @@
 
             <textarea placeholder="Tak belajar server lagi huhu" name="msg" id="" cols="30" rows="10"></textarea>
 
-            <input type="submit" class="btn" value="send message" name="btn-send">
+            <button type="submit" class="btn" value="send message" name="btn-send">
 
         </form>
 
