@@ -455,7 +455,11 @@ VanillaTilt.init(document.querySelectorAll('.tilt'),{
     max:25
 });
 
-
+window.onbeforeunload = () => {
+  for(const form of document.getElementsByTagName('form')) {
+    form.reset();
+  }
+}
 
   alert("Hello, Selamat Datang");
 
